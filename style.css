@@ -801,7 +801,9 @@ html[lang="en"] .coach-exp { left: 16px; }
 
   .nav-links {
     position: fixed;
-    top: var(--nav-h); left: 0; right: 0;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
     background: var(--nav-bg);
     backdrop-filter: blur(16px);
     flex-direction: column;
@@ -811,7 +813,11 @@ html[lang="en"] .coach-exp { left: 16px; }
     transform: translateY(-200%);
     transition: transform var(--trans);
     z-index: 999;
-  }
+    -webkit-transform: translateY(-200%);
+    -moz-transform: translateY(-200%);
+    -ms-transform: translateY(-200%);
+    -o-transform: translateY(-200%);
+}
   .nav-links.open { transform: translateY(0); }
   .nav-links a { width: 100%; padding: 12px 16px; border-radius: 8px; }
 

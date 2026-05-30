@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سوبر جيم | Super Gym</title>
+  <link rel="icon" type="image/jpeg" href="icon.jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@400;600;700;900&family=Barlow+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme" data-lang="ar">
+
+<!-- ═══════════════════════════════════ NAV ═══════════════════════════════════ -->
+<header id="header">
+  <nav class="navbar">
+    <a href="#hero" class="nav-logo">
+      <img src="logo.png" alt="Super Gym Logo">
+      <span class="logo-text" data-ar="سوبر جيم" data-en="Super Gym">سوبر جيم</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero"     data-ar="الرئيسية"  data-en="Home">الرئيسية</a></li>
+      <li><a href="#about"    data-ar="من نحن"     data-en="About">من نحن</a></li>
+      <li><a href="#services" data-ar="خدماتنا"    data-en="Services">خدماتنا</a></li>
+      <li><a href="#gallery"  data-ar="معرضنا"     data-en="Gallery">معرضنا</a></li>
+      <li><a href="#coaches"  data-ar="كباتننا"    data-en="Coaches">كباتننا</a></li>
+      <li><a href="#contact"  data-ar="اتصل بنا"   data-en="Contact">اتصل بنا</a></li>
+    </ul>
+
+    <div class="nav-controls">
+      <!-- Language Toggle -->
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language" title="Switch Language">
+        <div class="lang-track">
+          <span class="lang-ar">AR</span>
+          <div class="lang-knob">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M10 1C10 1 7 5.5 7 10s3 9 3 9" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M10 1C10 1 13 5.5 13 10s-3 9-3 9" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M1 10h18M2.5 5.5h15M2.5 14.5h15" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <span class="lang-en">EN</span>
+        </div>
+      </button>
+
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+        <div class="theme-icon sun">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="theme-icon moon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </button>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ═══════════════════════════════════ HERO ════════════════════════════════════ -->
+<section id="hero" class="hero">
+  <div class="hero-bg">
+    <img src="img-8.jpg" alt="Hero" class="hero-img">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge" data-ar="انضم إلينا اليوم" data-en="Join Us Today">انضم إلينا اليوم</div>
+    <h1 class="hero-title">
+      <span class="hero-line1" data-ar="تحدى" data-en="PUSH YOUR">تحدى</span>
+      <span class="hero-line2 accent" data-ar="حدودك" data-en="LIMITS">حدودك</span>
+    </h1>
+    <p class="hero-sub" data-ar="مرحباً بك في سوبر جيم — المكان الذي تولد فيه القوة. تدريب احترافي، معدات متطورة، ومجتمع يدفعك للأمام." 
+       data-en="Welcome to Super Gym — where strength is born. Professional coaching, top-tier equipment, and a community that pushes you forward.">
+      مرحباً بك في سوبر جيم — المكان الذي تولد فيه القوة.
+    </p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn-primary" data-ar="ابدأ الآن" data-en="Start Now">ابدأ الآن</a>
+      <a href="#services" class="btn-ghost" data-ar="اكتشف خدماتنا" data-en="Our Services">اكتشف خدماتنا</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">500+</span><span class="stat-label" data-ar="عضو نشط" data-en="Active Members">عضو نشط</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">10+</span><span class="stat-label" data-ar="مدرب محترف" data-en="Pro Coaches">مدرب محترف</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">5+</span><span class="stat-label" data-ar="سنوات خبرة" data-en="Years Active">سنوات خبرة</span></div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-down">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </a>
+</section>
+
+<!-- ════════════════════════════════════ ABOUT ══════════════════════════════════ -->
+<section id="about" class="about section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-images">
+        <img src="img-1.jpg" alt="Gym 1" class="about-img-main">
+        <img src="imag-3.jpg" alt="Gym 2" class="about-img-small">
+        <div class="about-badge-float">
+          <span class="badge-num">5+</span>
+          <span class="badge-text" data-ar="سنوات تميز" data-en="Years of Excellence">سنوات تميز</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-tag" data-ar="من نحن" data-en="About Us">من نحن</p>
+        <h2 data-ar="نبني أجساداً وننمي عقولاً" data-en="We Build Bodies, We Grow Minds">نبني أجساداً وننمي عقولاً</h2>
+        <p data-ar="سوبر جيم هو وجهتك المثالية للياقة البدنية الاحترافية. نوفر بيئة تدريبية متكاملة تجمع بين أحدث المعدات وأمهر المدربين المعتمدين دولياً." 
+           data-en="Super Gym is your ultimate destination for professional fitness. We provide a complete training environment combining the latest equipment with the most skilled internationally certified coaches.">
+          سوبر جيم هو وجهتك المثالية للياقة البدنية الاحترافية.
+        </p>
+        <div class="about-features">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9S3 16.97 3 12 7.03 3 12 3s9 4.03 9 9z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <span data-ar="معدات متطورة" data-en="Advanced Equipment">معدات متطورة</span>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <span data-ar="مدربون محترفون" data-en="Pro Trainers">مدربون محترفون</span>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <span data-ar="برامج متنوعة" data-en="Diverse Programs">برامج متنوعة</span>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <span data-ar="بيئة آمنة" data-en="Safe Environment">بيئة آمنة</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn-primary" data-ar="انضم إلينا" data-en="Join Us">انضم إلينا</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ SERVICES ═════════════════════════════════ -->
+<section id="services" class="services section dark-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag" data-ar="خدماتنا" data-en="Our Services">خدماتنا</p>
+      <h2 data-ar="كل ما تحتاجه في مكان واحد" data-en="Everything You Need in One Place">كل ما تحتاجه في مكان واحد</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6 4h12M6 4v2a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4M6 4H4M18 4h2M8 12h8M8 16h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 data-ar="تدريب الأثقال" data-en="Weight Training">تدريب الأثقال</h3>
+        <p data-ar="برامج متكاملة لبناء العضلات وزيادة القوة مع أحدث المعدات." data-en="Comprehensive muscle-building and strength programs with state-of-the-art equipment.">برامج متكاملة لبناء العضلات وزيادة القوة.</p>
+      </div>
+      <div class="service-card featured">
+        <div class="service-badge" data-ar="الأكثر طلباً" data-en="Most Popular">الأكثر طلباً</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 data-ar="تدريب شخصي" data-en="Personal Training">تدريب شخصي</h3>
+        <p data-ar="خطة مخصصة لأهدافك مع مدرب شخصي معتمد على مدار الأسبوع." data-en="A personalized plan for your goals with a certified personal trainer all week.">خطة مخصصة لأهدافك مع مدرب شخصي معتمد.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 data-ar="كارديو وليونة" data-en="Cardio & Flexibility">كارديو وليونة</h3>
+        <p data-ar="جلسات تحسين اللياقة القلبية وزيادة المرونة والتحمل." data-en="Sessions to improve cardiovascular fitness, flexibility, and endurance.">جلسات تحسين اللياقة القلبية والمرونة.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 data-ar="تدريب جماعي" data-en="Group Training">تدريب جماعي</h3>
+        <p data-ar="جلسات جماعية ممتعة ومحفزة لجميع المستويات في بيئة نشطة." data-en="Fun and motivating group sessions for all levels in an energetic atmosphere.">جلسات جماعية ممتعة لجميع المستويات.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 data-ar="التغذية الرياضية" data-en="Sports Nutrition">التغذية الرياضية</h3>
+        <p data-ar="استشارات تغذوية متخصصة لتحقيق أقصى نتائج التدريب." data-en="Specialized nutritional consultations to maximize your training results.">استشارات تغذوية لتحقيق أقصى النتائج.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-width="2"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 data-ar="استشارات مجانية" data-en="Free Consultation">استشارات مجانية</h3>
+        <p data-ar="احصل على استشارتك الأولى مجاناً مع أحد مدربينا المتخصصين." data-en="Get your first consultation free with one of our specialized trainers.">استشارتك الأولى مجاناً مع أحد مدربينا.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ GALLERY ══════════════════════════════════ -->
+<section id="gallery" class="gallery section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag" data-ar="معرضنا" data-en="Gallery">معرضنا</p>
+      <h2 data-ar="شاهد الفرق بنفسك" data-en="See the Difference Yourself">شاهد الفرق بنفسك</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item large"><img src="img-5.jpg" alt="Gym interior"><div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div></div>
+      <div class="gallery-item"><img src="img-2.jpg" alt="Gym equipment"><div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div></div>
+      <div class="gallery-item"><img src="imag-3.jpg" alt="Weights"><div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div></div>
+      <div class="gallery-item"><img src="img-4.jpg" alt="Training area"><div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div></div>
+      <div class="gallery-item large"><img src="img-6.jpg" alt="Full gym"><div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div></div>
+      <div class="gallery-item"><img src="img-1.jpg" alt="Workout"><div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ COACHES ══════════════════════════════════ -->
+<section id="coaches" class="coaches section dark-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag" data-ar="كباتننا" data-en="Our Coaches">كباتننا</p>
+      <h2 data-ar="فريق من الأبطال" data-en="A Team of Champions">فريق من الأبطال</h2>
+    </div>
+    <div class="coaches-grid">
+      <div class="coach-card">
+        <div class="coach-img-wrap">
+          <img src="img-7.jpg" alt="Coach Ahmed">
+          <div class="coach-exp" data-ar="8 سنوات" data-en="8 Years">8 سنوات</div>
+        </div>
+        <div class="coach-info">
+          <h3 data-ar="أحمد محمد" data-en="Ahmed Mohamed">أحمد محمد</h3>
+          <p class="coach-role" data-ar="مدرب أثقال معتمد" data-en="Certified Weight Coach">مدرب أثقال معتمد</p>
+          <p class="coach-desc" data-ar="متخصص في تضخيم العضلات وتقوية الجسم. حاصل على شهادات دولية في التدريب الرياضي." data-en="Specialist in muscle hypertrophy and body strengthening with international certifications.">متخصص في تضخيم العضلات وتقوية الجسم.</p>
+          <a href="tel:+201001234567" class="coach-phone">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.14 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16v.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span>+20 100 123 4567</span>
+          </a>
+          <a href="#contact" class="btn-outline" data-ar="احجز جلسة" data-en="Book a Session">احجز جلسة</a>
+        </div>
+      </div>
+      <div class="coach-card">
+        <div class="coach-img-wrap">
+          <img src="img-8.jpg" alt="Coach Khaled">
+          <div class="coach-exp" data-ar="6 سنوات" data-en="6 Years">6 سنوات</div>
+        </div>
+        <div class="coach-info">
+          <h3 data-ar="خالد عبدالله" data-en="Khaled Abdullah">خالد عبدالله</h3>
+          <p class="coach-role" data-ar="مدرب HIIT وكارديو" data-en="HIIT & Cardio Coach">مدرب HIIT وكارديو</p>
+          <p class="coach-desc" data-ar="خبير في تدريبات عالية الشدة وحرق الدهون. مدرب معتمد من الاتحاد الدولي للياقة البدنية." data-en="Expert in high-intensity training and fat burning. Certified by the International Fitness Federation.">خبير في تدريبات عالية الشدة وحرق الدهون.</p>
+          <a href="tel:+201009876543" class="coach-phone">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.14 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16v.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span>+20 100 987 6543</span>
+          </a>
+          <a href="#contact" class="btn-outline" data-ar="احجز جلسة" data-en="Book a Session">احجز جلسة</a>
+        </div>
+      </div>
+      <div class="coach-card">
+        <div class="coach-img-wrap">
+          <img src="img-7.jpg" alt="Coach Omar">
+          <div class="coach-exp" data-ar="10 سنوات" data-en="10 Years">10 سنوات</div>
+        </div>
+        <div class="coach-info">
+          <h3 data-ar="عمر حسن" data-en="Omar Hassan">عمر حسن</h3>
+          <p class="coach-role" data-ar="مدرب تغذية رياضية" data-en="Sports Nutrition Coach">مدرب تغذية رياضية</p>
+          <p class="coach-desc" data-ar="متخصص في التغذية الرياضية وبناء الجسم. أكثر من 10 سنوات في مجال الصحة واللياقة." data-en="Specialist in sports nutrition and body composition with 10+ years in health and fitness.">متخصص في التغذية الرياضية وبناء الجسم.</p>
+          <a href="tel:+201112345678" class="coach-phone">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.14 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16v.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span>+20 111 234 5678</span>
+          </a>
+          <a href="#contact" class="btn-outline" data-ar="احجز جلسة" data-en="Book a Session">احجز جلسة</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════ CONTACT ══════════════════════════════════ -->
+<section id="contact" class="contact section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-tag" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</p>
+      <h2 data-ar="نحن هنا من أجلك" data-en="We're Here for You">نحن هنا من أجلك</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.14 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16v.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h4 data-ar="اتصل بنا" data-en="Call Us">اتصل بنا</h4>
+            <a href="tel:+201001234567">+20 100 123 4567</a><br>
+            <a href="tel:+201009876543">+20 100 987 6543</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div>
+            <h4 data-ar="موقعنا" data-en="Our Location">موقعنا</h4>
+            <p data-ar="طنطا، شارع الجيش، بجوار مسجد القاعدة" data-en="Tanta, Army Street, next to Al-Qaeda Mosque">طنطا، شارع الجيش</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <h4 data-ar="أوقات العمل" data-en="Working Hours">أوقات العمل</h4>
+            <p data-ar="السبت - الخميس: 6ص - 12م" data-en="Sat - Thu: 6AM - 12AM">السبت - الخميس: 6ص - 12م</p>
+            <p data-ar="الجمعة: 8ص - 10م" data-en="Friday: 8AM - 10PM">الجمعة: 8ص - 10م</p>
+          </div>
+        </div>
+        <!-- Social contact buttons -->
+        <div class="contact-socials">
+          <a href="https://wa.me/201001234567" class="social-contact-btn whatsapp" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            <span data-ar="واتساب" data-en="WhatsApp">واتساب</span>
+          </a>
+          <a href="#" class="social-contact-btn instagram" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <span>Instagram</span>
+          </a>
+          <a href="#" class="social-contact-btn facebook" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <span>Facebook</span>
+          </a>
+          <a href="#" class="social-contact-btn tiktok" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.37 6.37 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.77 1.52V6.75a4.85 4.85 0 0 1-1-.06z"/></svg>
+            <span>TikTok</span>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
+          <input type="text" placeholder="" id="nameInput">
+          <span class="form-placeholder" data-ar="أدخل اسمك" data-en="Enter your name">أدخل اسمك</span>
+        </div>
+        <div class="form-group">
+          <label data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</label>
+          <input type="tel" id="phoneInput">
+          <span class="form-placeholder" data-ar="أدخل رقم هاتفك" data-en="Enter your phone number">أدخل رقم هاتفك</span>
+        </div>
+        <div class="form-group">
+          <label data-ar="الخدمة المطلوبة" data-en="Service Required">الخدمة المطلوبة</label>
+          <select id="serviceSelect">
+            <option value="" data-ar="اختر الخدمة" data-en="Select service">اختر الخدمة</option>
+            <option value="weights" data-ar="تدريب الأثقال" data-en="Weight Training">تدريب الأثقال</option>
+            <option value="personal" data-ar="تدريب شخصي" data-en="Personal Training">تدريب شخصي</option>
+            <option value="cardio" data-ar="كارديو وليونة" data-en="Cardio & Flexibility">كارديو وليونة</option>
+            <option value="group" data-ar="تدريب جماعي" data-en="Group Training">تدريب جماعي</option>
+            <option value="nutrition" data-ar="تغذية رياضية" data-en="Sports Nutrition">تغذية رياضية</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-ar="رسالتك" data-en="Your Message">رسالتك</label>
+          <textarea rows="4" id="messageInput"></textarea>
+          <span class="form-placeholder textarea-ph" data-ar="اكتب رسالتك هنا..." data-en="Write your message here...">اكتب رسالتك هنا...</span>
+        </div>
+        <button type="submit" class="btn-primary full-width" data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════ FOOTER ═════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="logo.png" alt="Super Gym">
+          <span data-ar="سوبر جيم" data-en="Super Gym">سوبر جيم</span>
+        </div>
+        <p data-ar="وجهتك الأولى للياقة البدنية الاحترافية. نبني الأجساد ونصنع الأبطال منذ 2019." data-en="Your first destination for professional fitness. Building bodies and making champions since 2019.">وجهتك الأولى للياقة البدنية الاحترافية.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/201001234567" target="_blank" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          </a>
+          <a href="#" target="_blank" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" target="_blank" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" target="_blank" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.37 6.37 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.77 1.52V6.75a4.85 4.85 0 0 1-1-.06z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+        <ul>
+          <li><a href="#hero"     data-ar="الرئيسية"  data-en="Home">الرئيسية</a></li>
+          <li><a href="#about"    data-ar="من نحن"     data-en="About">من نحن</a></li>
+          <li><a href="#services" data-ar="خدماتنا"    data-en="Services">خدماتنا</a></li>
+          <li><a href="#gallery"  data-ar="معرضنا"     data-en="Gallery">معرضنا</a></li>
+          <li><a href="#coaches"  data-ar="كباتننا"    data-en="Coaches">كباتننا</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h4 data-ar="خدماتنا" data-en="Services">خدماتنا</h4>
+        <ul>
+          <li><a href="#services" data-ar="تدريب الأثقال" data-en="Weight Training">تدريب الأثقال</a></li>
+          <li><a href="#services" data-ar="تدريب شخصي" data-en="Personal Training">تدريب شخصي</a></li>
+          <li><a href="#services" data-ar="كارديو وليونة" data-en="Cardio & Flexibility">كارديو وليونة</a></li>
+          <li><a href="#services" data-ar="تدريب جماعي" data-en="Group Training">تدريب جماعي</a></li>
+          <li><a href="#services" data-ar="تغذية رياضية" data-en="Sports Nutrition">تغذية رياضية</a></li>
+        </ul>
+      </div>
+
+      <!-- Location & Contact -->
+      <div class="footer-col">
+        <h4 data-ar="تواصل معنا" data-en="Get in Touch">تواصل معنا</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+          <span data-ar="طنطا، شارع الجيش، محافظة الغربية، مصر" data-en="Tanta, Army Street, Gharbia, Egypt">طنطا، شارع الجيش، محافظة الغربية، مصر</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.14 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16v.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <a href="tel:+201001234567">+20 100 123 4567</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+          <a href="https://maps.google.com?q=Tanta+Egypt" target="_blank" data-ar="عرض على الخريطة" data-en="View on Map">عرض على الخريطة</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p data-ar="© 2024 سوبر جيم. جميع الحقوق محفوظة." data-en="© 2024 Super Gym. All rights reserved.">© 2024 سوبر جيم. جميع الحقوق محفوظة.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="style.js"></script>
+</body>
+</html>

@@ -808,7 +808,7 @@ html[lang="en"] .coach-exp { left: 16px; }
     padding: 20px;
     gap: 4px;
     border-bottom: 1px solid var(--border);
-    transform: translateY(-110%);
+    transform: translateY(-200%);
     transition: transform var(--trans);
     z-index: 999;
   }
